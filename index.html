@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's go!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="hamburgers.min.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navigacija">
+        <img src="photos/logo.jpeg" alt="logotipas">
+
+        <div class="links">
+            <a href="">About</a>
+            <a href="">Contact us</a>
+            <a href="">Pricing</a>
+        </div>
+
+        <div class="hamburger hamburger--squeeze" id="navBurger" tabindex="0" aria-label="Menu" role="button" aria-controls="navigacija" onclick="toggleNav()">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section1">
+            <h2>It's time to</h2>
+            <h1>VISIT THAILAND</h1>
+            <p>Crave new adventures, mystical experiences and relaxing beaches? You need to visit Thailand. We make sure that you’ll get an experience you'll never forget.</p>
+            <a class="mygtukas" href="adventure.html">Let's go!</a>
+        </section>
+
+        <section class="section2">
+            <div>
+                <h1>LICENCE TO LIVE</h1>
+            </div>
+            <div class="block1">
+                <a href="https://yachtingexperience.net/our-fleet/thailand-destination/?gclid=Cj0KCQiA7oyNBhDiARIsADtGRZaOnkQacGDLiTq5y6Qc7VvfBtIhQ12pIPQSHKHN-s8UilMV2s9kN2EaAnO6EALw_wcB" class="adventure">ADVENTURE</a>
+                <a href="https://theculturetrip.com/asia/thailand/articles/these-are-the-top-7-museums-in-thailand/" class="culture">CULTURE</a>
+                <a href="https://letsrelaxspa.com/" class="relaxation">RELAXATION</a>
+            </div>
+        </section>
+
+        <section class="section3">
+            <div class="photo"></div>
+            <div class="div_border">
+                <h1>Title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora incidunt similique, voluptatibus corrupti voluptatem officiis placeat molestiae, pariatur odit minus magnam sequi saepe excepturi exercitationem numquam delectus commodi quibusdam harum.</p>
+                <div class="trys_divai">
+                    <div>Lorem ipsum dolor sit amet.</div>
+                    <div>Lorem ipsum dolor sit amet.</div>
+                    <div>Lorem ipsum dolor sit amet.</div>
+                </div>
+            </div>
+            <div><h1>Title</h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora tempore reprehenderit nemo assumenda delectus earum officia. Sunt quos sapiente magnam, facilis, non natus, quis vel ex temporibus obcaecati quae illo!</div>
+            <div class="photo2"></div>
+        </section>
+
+        <section class="section5">
+            <h1>lorem</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores libero porro nostrum autem eveniet mollitia deleniti quasi et beatae illo ab, sequi consequuntur soluta vero velit a pariatur fugiat. Sequi possimus impedit veritatis amet autem maiores corrupti ut a, sunt, vitae odit eius alias corporis ratione quos temporibus. Vel, impedit!</p>
+        </section>
+
+        <section class="section4">
+            <h1>Follow us on instagram</h1>
+            <a href="https://instagram.com">@travel_time</a>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Subscribe</h2>
+        <p>Subscribe to our newsletter to always be the first to hear about recent news, offers and adventures in Bali.</p>
+        <form action="subscribe">
+            <label>Email adress:</label><br>
+            <input type="email" id="email" pattern="@gmail.com" size="25" placeholder="example@gmail.com" required><br>
+            <input type="submit" value="Submit">
+        </form>
+        <p style="font-size: 14px; margin-top: 60px;">&copy; Copyright 2021 ieva.obel</p>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            let isActive = document.getElementById('navBurger').classList.contains('is-active');
+
+            if (isActive) {
+                document.getElementById('navBurger').classList.remove('is-active');
+                document.querySelector('#navigacija .links').classList.remove('active');
+            } else {
+                document.getElementById('navBurger').classList.add('is-active');
+                document.querySelector('#navigacija .links').classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>

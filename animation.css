@@ -1,0 +1,25 @@
+@keyframes rodykle {
+    from {
+        transform: translateX(10px);
+    }
+    to {
+        transform: translateX(300px);
+    }
+}
+@keyframes judantis {
+    0% {
+        transform: scale(1);
+        color: white;
+        border-color: white;
+    }
+    50% {
+        transform: scale(1.2);
+        color: rgb(33, 148, 52);
+        border-color: rgb(33, 148, 52);
+    }
+    100% {
+        transform: scale(1);
+        color: white;
+        border-color: white;
+    }
+}

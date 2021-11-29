@@ -1,0 +1,271 @@
+html {
+    font-family: 'Poppins', sans-serif;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(74, 97, 72);
+    font-size: 30px;
+    color: white;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+nav a {
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    display: inline-flex;
+}
+nav a:hover {
+    background-color: rgb(74, 97, 72);
+    color:rgb(201, 219, 200);
+}
+nav img {
+    max-height: 70px;
+    max-width: 120px;
+}
+footer {
+    background-color: rgb(74, 97, 72);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    padding-bottom: 40px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.section1 {
+    display: flex;
+    flex-direction: column;
+    background-image: url("photos/thailand.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding-left: 60px;
+    padding-top: 220px;
+    padding-bottom: 30px;
+}
+.section1 h1 {
+    font-size: 50px;
+}
+.section1 h2 {
+    margin-bottom: 0;
+    font-size: 35px;
+}
+.section1 p {
+    max-width: 600px;
+    margin: 0px;
+    line-height: 1.5;
+    font-size: 25px;
+}
+.section2 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(201, 219, 200);
+    font-size: 25px;
+    color: rgb(74, 97, 72);
+    align-items: center;
+}
+.section2 img {
+    max-height: 700px;
+    max-width: 500px;
+    margin-top: 20px;
+}
+.section2 h1 {
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+.section3 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(400px, auto);
+    grid-gap: 0;
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+}
+.section3 div {
+    background-color: rgb(74, 97, 72);
+    color: rgb(201, 219, 200);
+    text-align: center;
+    padding: 70px;
+    line-height: 1.5;
+}
+.section3 h1 {
+    font-size: 30px;
+}
+.trys_divai {
+    display: flex;
+    flex-direction: column; 
+}
+.trys_divai div {
+    max-height: 300px;
+    max-width: 250px;
+    font-size: 20px;
+    border:rgb(47, 68, 55) solid 3px;
+    border-radius: 20px;
+    margin: 15px;
+    background-color: rgb(120, 153, 122);
+    text-align: center;
+    color: rgb(74, 97, 72);
+    padding: 10px;
+}
+.trys_divai div:hover {
+    background-color: rgb(135, 209, 168);
+}
+.block1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.block1 a {
+    height: 300px;
+    width: 400px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    padding-top: 150px;
+    margin-left: 45px;
+    margin-top: 30px;
+}
+.block1 a {
+    opacity: 0.7;
+}
+.block1 a:hover {
+    font-size: 45px;
+    opacity: 1.0;
+}
+.adventure {
+    background-image: url(photos/bangkok/adventure.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.culture {
+    background-image: url(photos/culture/budha.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.relaxation {
+    background-image: url(photos/bangkok/relax.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.section4 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-image: url(photos/culture/bridge.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+.section4 a {
+    color:white; 
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    text-align: center; 
+   margin-left: auto;
+   margin-right: auto;
+    background-color: rgb(74, 97, 72);
+    height: 25px;
+    width: 200px;
+    text-decoration: none;
+    padding: 5px;
+}
+.section4 h1 {
+    color: white;
+    font-size: 35px;
+}
+.section5 {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 40px;
+    background-color: rgb(201, 219, 200);
+    color: rgb(74, 97, 72);
+}
+.mygtukas {
+    height: 30px;
+    width: 200px;
+    border: white solid 3px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 20px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color:white;
+    animation-name: judantis;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+.photo {
+    background-image: url(photos/bangkok/rooftop.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.photo2 {
+    background-image: url(photos/bangkok/lights.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.div_border {
+    border-bottom: 1px solid white;
+}
+input {
+    border: white solid 2px;
+    border-radius: 25px;
+    height: 30px;
+    margin: 10px;
+    background-color: rgb(74, 97, 72);
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+#map {
+    background-image: url(photos/bangkok/monks.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 60px;
+    font-size: 16px;
+    color: white;
+}
+.directions h2 {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+.rodykle {
+    background-image:url(photos/bangkok/arrow.jpg);
+    height: 70px;
+    width: 45px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: rodykle;
+    animation-duration: 7s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+nav div.hamburger {
+    width: 55px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
